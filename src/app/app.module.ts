@@ -7,12 +7,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserFormComponent } from './user-form/user-form.component';
 import { RepositoriesComponent } from './repositories/repositories.component';
+import { UserComponent } from './user/user.component';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserFormComponent,
-    RepositoriesComponent
+    RepositoriesComponent,
+    UserComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
