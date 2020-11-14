@@ -11,6 +11,7 @@ import { UserComponent } from './user/user.component';
 import { DateCountPipe } from './date-count.pipe';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AboutComponent } from './about/about.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AboutComponent } from './about/about.component';
     UserComponent,
     DateCountPipe,
     NotFoundComponent,
-    AboutComponent
+    AboutComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
