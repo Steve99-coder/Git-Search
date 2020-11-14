@@ -1,1 +1,13 @@
-<p>user-form works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <form class="form-inline active-cyan-4">
+                <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search For GitHub Username" name="searchName" [(ngModel)]="searchName" aria-label="Search">
+                <button class="btn btn-secondary  btn-sm" (click)="search()"> <i class="fa fa-search" aria-hidden="true"></i> Search</button>
+            </form>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+</div>
+<br>
