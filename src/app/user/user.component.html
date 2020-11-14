@@ -3,32 +3,33 @@
     <br>
     <app-user-form (searchUser)="getInfo($event)"></app-user-form>
 </div>
-<div class="container content">
-    <div class="row">
+<div class="container-fluid content">
+    <div class="jumbotron">
+        <div class="row">
 
-        <div class="col-sm-7 user">
-            <div class="card-body">
-                <h5 class="card-title"><strong>Username:</strong><span class="float-right">{{users.login}}</span></h5>
-                <p class="card-text"><strong>Bio:</strong>{{users.bio}}</p>
-                <p class="card-text"><i class="fa fa-file-o" style="font-size:18px">&nbsp;&nbsp;</i><strong>Public Repositories:</strong> &nbsp;&nbsp;<span class="float-right">{{users.public_repos}}</span></p>
-                <p class="card-text"> <i class="fa fa-users" style="font-size:18px"></i>&nbsp;&nbsp;<strong>Followers:</strong> &nbsp;&nbsp;<span class="float-right">{{users.followers}}</span></p>
-                <p class="card-text"><i class="fa fa-user" style="font-size:18px"></i>&nbsp;&nbsp;<strong>Following:</strong> &nbsp;&nbsp;<span class="float-right">{{users.following}}</span></p>
-                <p class="card-text"><i class="fa fa-clock-o" style="font-size:18px"></i>&nbsp;&nbsp;<strong>Account Created on:</strong>&nbsp;&nbsp;<span class="float-right"> {{users.created_at|date}}</span></p>
+            <div class="col-sm-7 user">
                 <div class="card-body">
-                    <span class="name"><i class="fa fa-user" style="font-size:20px"></i> &nbsp;{{users.login}}</span> <a href="{{users.html_url}}" class='float-right' target='_blank'><button class="btn-outline-success btn btn-sm"><i class="fa fa-github"
+                    <h5 class="card-title"><strong>Username:</strong><span class="float-right">{{users.login}}</span></h5>
+                    <p class="card-text"><strong>Bio:</strong>{{users.bio}}</p>
+                    <p class="card-text"><i class="fa fa-file-o" style="font-size:18px">&nbsp;&nbsp;</i><strong>Public Repositories:</strong> &nbsp;&nbsp;<span class="float-right">{{users.public_repos}}</span></p>
+                    <p class="card-text"> <i class="fa fa-users" style="font-size:18px"></i>&nbsp;&nbsp;<strong>Followers:</strong> &nbsp;&nbsp;<span class="float-right">{{users.followers}}</span></p>
+                    <p class="card-text"><i class="fa fa-user" style="font-size:18px"></i>&nbsp;&nbsp;<strong>Following:</strong> &nbsp;&nbsp;<span class="float-right">{{users.following}}</span></p>
+                    <p class="card-text"><i class="fa fa-clock-o" style="font-size:18px"></i>&nbsp;&nbsp;<strong>Account Created on:</strong>&nbsp;&nbsp;<span class="float-right"> {{users.created_at|date}}</span></p>
+                    <div class="card-body">
+                        <span class="name"><i class="fa fa-user" style="font-size:20px"></i> &nbsp;{{users.login}}</span> <a href="{{users.html_url}}" class='float-right' target='_blank'><button class="btn-outline-success btn btn-sm"><i class="fa fa-github"
                                 style="font-size:20px"></i> &nbsp; <span id="profile">Github</span> </button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4" id="imgcard">
+                <div class="img">
+                    <div class="card-img-top">
+                        <img src="{{users.avatar_url}}" alt="" class="rounded-circle">
+                    </div>
+
                 </div>
             </div>
         </div>
-        <div class="col-sm-4" id="imgcard">
-            <div class="userimage">
-                <div class="card-img-top">
-                    <img src="{{users.avatar_url}}" alt="" class="rounded-circle">
-                </div>
-
-            </div>
-        </div>
-
     </div>
 </div>
 <div class="text-center repos" id="reps">
@@ -51,8 +52,8 @@
                 <div class="card-subtitle mb-2">
                     <span class="title">Language: </span> {{repo.language}}
                 </div>
-                <div class="card-subtitle mb-2"><span class="title">Created:&nbsp; <span
-                                id="created">{{repo.created_at | date}}</span> &nbsp; On:</span>
+                <div class="card-subtitle mb-2"><span class="title">Created On:&nbsp; <span
+                                id="created">{{repo.created_at | date}}</span> &nbsp; </span>
                     &nbsp;{{repo.created_at | dateCount}}
                 </div>
             </div>

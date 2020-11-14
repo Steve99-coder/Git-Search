@@ -1,0 +1,22 @@
+.repo {
+    color: black;
+    margin-bottom: 2%;
+    border-radius: 1px solid black;
+    border-style: inset;
+}
+
+.btn-group {
+    margin-right: 5%;
+}
+
+.space1 {
+    margin-bottom: 10%;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.back {
+    background-color: beige;
+}

@@ -26,7 +26,7 @@ export class RepositoriesComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.searchRepository('Stephen Nderitu');
+    this.searchRepository('Steve99-coder');
   }
 
 }

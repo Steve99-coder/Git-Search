@@ -7,4 +7,4 @@ export class Repository {
         public watchers_count: number,
         public language: string) {
     }
-}
+} 

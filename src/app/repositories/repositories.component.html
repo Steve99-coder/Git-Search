@@ -1,7 +1,41 @@
-<h2 class="text-center"><span><u>REPOSITORIES</u></span></h2>
+<h2 class="text-center"><span class="back"><u>REPOSITORIES</u></span></h2>
 <br>
 <app-user-form (searchUser)=" searchRepository($event)"></app-user-form>
-<div class="container">
+<div class="container allrepos d-flex flex-wrap justify-content-around">
+    <div class="card" *ngFor="let repo of repos" style="width: 22rem;" class="repo">
+        <div class="card space1" appHover>
+            <h5 class="card-title text-align-center"><span class="title">{{repo.name}} </span> &nbsp;
+                <button class="btn btn-sm btn-outline-success "><a href="{{repo.html_url}}" target="_blank">Github&nbsp;<i class="fa fa-arrow-circle-right"></i></a></button>
+
+
+            </h5>
+
+            <div class="card-text">
+                <hr>
+                <div class="desc"><span class="title">Description:</span> &nbsp;{{repo.description}}
+                </div>
+                <hr>
+                <div class="card-subtitle mb-2">
+                    <span class="title">Language: </span> {{repo.language}}
+                </div>
+                <div class="card-subtitle mb-2"><span class="title">Created On:&nbsp; <span
+                                id="created">{{repo.created_at | date}}</span> &nbsp; </span>
+                    &nbsp;{{repo.created_at | dateCount}}
+                </div>
+            </div>
+
+            <div class="card-footer">
+                <div class="btn-group" role="group" aria-label="Third group">
+                    <button class="btn btn-sm btn-outline-info"><i class="fa fa-eye" style="font-size:16px"></i> &nbsp;<span
+                            class="forks">{{repo.watchers_count}}</span></button>
+                </div>
+                <div class="btn-group" role="group" aria-label="Third group">
+                    <button class="btn btn-sm btn-outline-danger"><i class="fa fa-code-fork" style="font-size:16px"></i>
+                        &nbsp;<span class="forks">{{repo.forks}}</span></button>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container">
     <div class="container allrepos">
         <div class="card" appHighlight *ngFor="let repo of repos" style="width: 22rem;" class="repo">
             <div class="card-body">
@@ -34,4 +68,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->

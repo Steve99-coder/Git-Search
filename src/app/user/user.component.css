@@ -5,6 +5,12 @@
     border-style: inset;
 }
 
+.img {
+    margin-bottom: 2%;
+    border-radius: 1px solid green;
+    border-style: inset;
+}
+
 .btn-group {
     margin-right: 5%;
 }

@@ -10,7 +10,7 @@ import { User } from '../user';
 })
 export class UserComponent implements OnInit {
   users:User; 
-  repos:Repository; 
+  repos:Repository;  
         
   constructor(public getService: ProfileServiceService, private repoService:ProfileServiceService) { }
   getInfo(nameSearch){
