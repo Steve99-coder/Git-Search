@@ -9,6 +9,7 @@ import { UserFormComponent } from './user-form/user-form.component';
 import { RepositoriesComponent } from './repositories/repositories.component';
 import { UserComponent } from './user/user.component';
 import { DateCountPipe } from './date-count.pipe';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DateCountPipe } from './date-count.pipe';
     UserFormComponent,
     RepositoriesComponent,
     UserComponent,
-    DateCountPipe
+    DateCountPipe,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
