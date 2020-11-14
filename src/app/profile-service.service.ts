@@ -17,7 +17,7 @@ export class ProfileServiceService {
     this.findUser = new User("", "", "", "", 0, 0, 0, "","", new Date);
     this.repos = new Repository("", "", "", new Date, 0, 0, "");
   }
-  userSeach(nameSearch: string) {
+  userSearch(nameSearch: string) {
     interface Response {
       url: string,
       login: string;

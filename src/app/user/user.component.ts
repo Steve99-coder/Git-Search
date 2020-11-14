@@ -14,7 +14,7 @@ export class UserComponent implements OnInit {
         
   constructor(public getService: ProfileServiceService, private repoService:ProfileServiceService) { }
   getInfo(nameSearch){
-    this.getService.userSeach(nameSearch).then(
+    this.getService.userSearch(nameSearch).then(
       (success)=>{
         this.users = this.getService.findUser;
       }, 
