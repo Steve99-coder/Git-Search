@@ -4,11 +4,9 @@ Github Search
 ## Author
 Stephen Nderitu
 
-## Project Image
-![steve](src/assets/img.jpg)
-
 ## Project Description
 This is a website where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories in the form for search repositories.
+![steve](src/assets/img.jpg)
 
 ## BDD:
 | Action |  Input    | Output       |
